@@ -2,6 +2,24 @@ h1{
     color: lightcoral;
 }
 ul{
-    color: limegreen;
+    color: goldenrod;
     list-style: none;
+}
+#fruits-title{
+    color: darkslateblue;
+}
+#places-title{
+    color: blueviolet;
+}
+.importent-places{
+    color: brown;
+}
+.fruits-container ul li{
+    color: darkmagenta;
+}
+.yellow-bg{
+    text-align: center;
+}
+.large-text{
+    font-size: 2em;
 }
