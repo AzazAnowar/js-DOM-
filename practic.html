@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Box</title>
+</head>
+<body>
+    <h1>Adding Comment</h1>
+    <div id="comment-container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quidem aliquid vel atque quis sint nesciunt inventore maxime iusto officiis. Error enim, pariatur nihil dicta perspiciatis inventore laudantium commodi eos.</p>
+        <p>Molestiae et reiciendis sapiente iste officiis recusandae non quia pariatur accusantium quae, distinctio quaerat? Autem doloremque illum nihil, at minus veniam, adipisci, nam temporibus necessitatibus unde assumenda repellat pariatur magni?</p>
+        <p>Reprehenderit adipisci ducimus expedita aliquam in nemo temporibus, impedit quia ea libero dolorem laborum quidem voluptatum. Accusantium cupiditate ipsum amet, iusto molestias eligendi labore explicabo inventore, blanditiis quo cum quaerat!</p>
+        <p>Expedita quasi doloribus in similique numquam repellat magnam quaerat aliquid ad iure voluptatibus labore a voluptatum ratione nostrum commodi, est eveniet repudiandae nesciunt asperiores porro illum incidunt ipsum distinctio. Ipsum!</p>
+    </div>
+    <div>
+        <textarea name="" id="new-comment" cols="60" rows="10"></textarea>
+        <br>
+        <br>
+        <button id="add-btn">Add Post</button>
+    </div>
+
+    <script>
+        document.getElementById('add-btn').addEventListener('click', function(){
+            const commentBox = document.getElementById('new-comment');
+            const newComment = commentBox.value;
+
+            // console.log(newComment);
+            const commentContainer = document.getElementById('comment-container');
+            const p = document.createElement('p')
+            p.innerText = newComment;
+            commentContainer.appendChild(p);
+            commentBox.value = '';
+        });
+    </script>
+</body>
+</html>
